@@ -6,7 +6,7 @@
 
 <h1 style="display: block; border-bottom:  0.5px solid #555;">📸 Дизайн</h1>
 
-Интерфейс разработан на основе бесплатного макета из Figma.
+Интерфейс разработан на основе бесплатного макета из Figma. <br>
 <br>
 <img src="/assets/first-screen.png">
 
