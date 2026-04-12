@@ -51,13 +51,13 @@ body {
   color: var(--black-color);
 }
 .navigation:first-child {
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
 }
-.navigation:nth-child(3) {
-  align-self: center;
+.navigation li:nth-child(3) a {
+  display: inline-flex;
+  align-items: center;
 }
-.navigation:nth-child(3) img {
+.navigation li:nth-child(3) img {
   margin: 0 0 0 10px;
 }
 .navigation .nav__btn {
@@ -65,8 +65,7 @@ body {
   align-items: center;
   background-color: var(--color-dark-green);
   color: var(--white-color);
-  -moz-column-gap: 11px;
-       column-gap: 11px;
+  column-gap: 11px;
   padding: 11px 15px;
 }
 .navigation .nav__btn:hover {
@@ -184,7 +183,8 @@ li {
   position: absolute;
   margin: 33.3rem 0 0 0;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 .conteiner__bottom__button:hover :hover {
   background-color: var(--color-light-green);
@@ -205,27 +205,6 @@ li {
   color: var(--white-color);
   height: 63px;
   width: 100%;
-}
-.conteiner__bottom__button button__one {
-  background-color: var(--color-dark-green);
-}
-.conteiner__bottom__button__two {
-  background-color: var(--color-light-green);
-}
-.conteiner__bottom__button__two:hover :hover {
-  background-color: var(--color-dark-green);
-  color: var(--white-color);
-  border: 1px solid var(--color-light-green);
-  transition-duration: 0.45s;
-}
-.conteiner__bottom__button__three {
-  background-color: var(--color-dark-green);
-}
-.conteiner__bottom__button__three:hover :hover {
-  background-color: var(--color-light-green);
-  color: var(--white-color);
-  border: 1px solid var(--color-dark-green);
-  transition-duration: 0.45s;
 }
 
 .heading {
@@ -381,8 +360,7 @@ li {
 }
 
 .inovation__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 526px;
   height: 260px;
   transform: translate(0 5px);
@@ -504,7 +482,7 @@ li {
   flex-wrap: wrap;
   padding-left: 30px;
   padding-top: 35px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .news__recommendation ul {
@@ -765,10 +743,9 @@ li {
   align-items: center;
   background-color: var(--color-dark-green);
   color: var(--white-color);
-  -moz-column-gap: 11px;
-       column-gap: 11px;
+  column-gap: 11px;
   padding: 11px 15px;
 }
 .footer__content__list__item:nth-child(3):hover {
   background-color: var(--color-light-green);
-}/*# sourceMappingURL=style.css.map */
+}
